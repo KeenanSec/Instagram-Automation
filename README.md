@@ -36,4 +36,4 @@ Your Google Sheet needs these exact headers:
 
 * **Single Images Only:** Does not support Carousels or Reels yet.
 * **No Error Catching:** If the Meta API fails, the sheet doesn't automatically update to "Failed." You'll need to add an error trigger branch if you want error logging.
-* **Token Expiration:** Remember that long-lived Meta tokens expire every 60 days.
+* **Token Expiration:** Meta tokens expire every 60 days.
