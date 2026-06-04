@@ -1,10 +1,5 @@
 # Instagram Automation (n8n)
 
-Scheduled Instagram content publishing pipeline built in n8n. Posts are queued in a Google Sheet, published to an Instagram Business account through the Meta Graph API on a schedule, and written back to the sheet with their publish status. 
-
-> Replace the bracketed `[...]` placeholders, confirm the node behavior matches your actual configuration, and drop in your own screenshot before pushing.
-
----
 
 ## Overview
 
