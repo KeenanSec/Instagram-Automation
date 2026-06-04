@@ -1,6 +1,6 @@
 # Instagram Automation (n8n)
 
-Scheduled Instagram content publishing pipeline built in n8n. Posts are queued in a Google Sheet, published to an Instagram Business account through the Meta Graph API on a schedule, and written back to the sheet with their publish status. Built as part of Zero Prompt LLC automation work.
+Scheduled Instagram content publishing pipeline built in n8n. Posts are queued in a Google Sheet, published to an Instagram Business account through the Meta Graph API on a schedule, and written back to the sheet with their publish status. 
 
 > Replace the bracketed `[...]` placeholders, confirm the node behavior matches your actual configuration, and drop in your own screenshot before pushing.
 
@@ -74,11 +74,6 @@ This handles real credentials and a public posting surface, so it is treated acc
 ```
 .
 |- workflow.json        # n8n workflow export (credentials stripped)
-|- docs/
-|  |- architecture.png  # workflow screenshot
+|- architecture.png  # workflow screenshot
 |- README.md
 ```
-
-## License
-
-[MIT, or your choice]
