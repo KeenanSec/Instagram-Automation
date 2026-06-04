@@ -14,13 +14,7 @@ Stack: n8n (workflow engine), Google Sheets (content queue + state store), Meta 
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[Schedule Trigger] --> B[Get rows from Google Sheet]
-    B --> C[Graph API: create media container]
-    C --> D[Graph API: publish media]
-    D --> E[Update row in Google Sheet]
-```
+![Instagram Automation Workflow](/workflow.png)
 
 The pipeline runs end to end on every scheduled tick. State lives entirely in the sheet, so the workflow is stateless and can be re-run safely.
 
