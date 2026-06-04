@@ -54,10 +54,9 @@ Adjust column names to match your actual sheet.
 This handles real credentials and a public posting surface, so it is treated accordingly:
 
 - **No secrets in the repo.** The Meta access token and Google service account key live only in the n8n credential store, never in the workflow or this repo.
-- **Sanitized export.** `workflow.json` was exported with credentials stripped (n8n exports credential references, not secret values, but the file was reviewed by hand before commit to confirm nothing leaked).
+- **Sanitized export.** `workflow.json` was exported with credentials stripped.
 - **Least privilege.** The Meta token requests only the permissions the publish flow needs, and the Google service account is shared on the single target sheet rather than the whole Drive.
-- **Token lifecycle.** Long-lived Meta tokens expire on roughly a 60 day cycle and need rotation; this is documented rather than left to fail silently.
-
+- **Token lifecycle.** Meta tokens expire on a 60 day cycle.
 ## Limitations and next steps
 
 - No retry or dead-letter handling yet. A failed Graph API call leaves the row in `pending`; adding an error branch that writes `status = failed` with the error message is the next improvement.
